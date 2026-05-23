@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Egypt Governorates Dashboard</title>
+
+  <!-- ArcGIS CSS -->
+  <link rel="stylesheet" href="https://js.arcgis.com/4.30/esri/themes/light/main.css">
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Egypt Governorates Operations Dashboard</h1>
+  </div>
+
+  <!-- Side Panel -->
+  <div class="side-panel">
+
+    <h2>Report Issue</h2>
+
+    <!-- Issue Type -->
+    <label>Issue Type</label>
+
+    <select id="issueType">
+
+      <option value="Violating Building">
+        Violating Building
+      </option>
+
+      <option value="Street Issue">
+        Street Issue
+      </option>
+
+    </select>
+
+    <!-- Description -->
+    <label>Description</label>
+
+    <textarea
+      id="description"
+      placeholder="Enter issue description">
+    </textarea>
+
+    <!-- Start Reporting Button -->
+    <button id="startReportBtn">
+      Start Reporting
+    </button>
+
+    <hr>
+
+    <!-- Filter Section -->
+    <h2>Filter Issues</h2>
+
+    <label>Filter By Type</label>
+
+    <select id="filterType">
+
+      <option value="All">
+        All
+      </option>
+
+      <option value="Violating Building">
+        Violating Building
+      </option>
+
+      <option value="Street Issue">
+        Street Issue
+      </option>
+
+    </select>
+
+  </div>
+
+  <!-- Map -->
+  <div id="viewDiv"></div>
+
+  <!-- ArcGIS SDK -->
+  <script src="https://js.arcgis.com/4.30/"></script>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
